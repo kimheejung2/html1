@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="sass/test.css">
 </head>
+
 <body>
     <div class="container">
-    <div><h1>検索</h1>
-        <ul class="bar font12">
-            <li class="left-imput"><input class="form-control fs-12" name="free_word" type="text" placeholder="お仕事No・職種などから探す" maxlength="50"></li>
-        <li><form><button class="input-botton">butten</button></form></li>
-    </ul>
+        <div>
+            <label class="label1">検索</label>
+            <ul class="bar font12">
+                <li class="left-imput"><input class="form-control " name="free_word" type="text"
+                        placeholder="お仕事No・職種などから探す" maxlength="50"></li>
+                <li>
+                    <form><button class="input-btn input-btn-color">butten</button></form>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
+
+    
+    <div class="container2">
+             <label class="label2">お問い合わせ区分</label>
+                    <span class="txt-require">必須</span>
+               <ul class="bar2">
+                   <li>
+                    <select class="left-imput2 form-control2 fs-12" name="toikbn">
+                        <option value="" selected="selected">選択</option>
+                        <option value="登録について">登録について</option>
+                        <option value="スキルアップ研修について">スキルアップ研修について</option>
+                        <option value="お仕事探しについて">お仕事探しについて</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </li>
+                </ul>
+
     
 
-    </div>
-    
 </body>
+
 </html>
