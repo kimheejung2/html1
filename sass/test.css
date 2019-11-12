@@ -11,11 +11,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 14px;
-  margin: 0;
-}
-
 li {
   list-style: none;
 }
@@ -39,10 +34,6 @@ a:hover img {
   margin: 30px;
 }
 
-.container .label1 {
-  font-size: 15px;
-}
-
 .container .bar {
   display: block;
   padding: 0.375rem 0.75rem;
@@ -51,11 +42,11 @@ a:hover img {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
+  border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  margin: 0;
 }
 
-.container .form-control {
+.container .bar .form-control {
   height: 30px;
   width: 100%;
   resize: none;
@@ -64,16 +55,15 @@ a:hover img {
   margin: 0 10px 0px 0px;
 }
 
-.container .font12 {
+.container .bar .font12 {
   height: 30px;
   margin: 10px;
   width: 80%;
   resize: none;
   padding: 8px 16px;
-  font-size: 14px;
 }
 
-.container .left-imput {
+.container .bar .left-imput {
   float: left;
   height: 30px;
   width: 70%;
@@ -82,43 +72,24 @@ a:hover img {
   display: flex;
 }
 
-.container .input-btn {
+.container .bar .input-botton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80px;
   height: 35px;
+  background-color: #187cc2;
   border-radius: 3px;
+  color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 0;
-  font-size: 14px;
 }
 
-.container .input-btn-color {
-  background-color: #187cc2;
-  color: #fff;
-}
-
-.container2 .bar2 {
-  display: block;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border-radius: 0.25rem;
-  margin: 0;
-}
-
-.container2 .font13 {
-  height: 30px;
-  margin: 10px;
-  width: 80%;
-  resize: none;
-  padding: 8px 16px;
-  font-size: 14px;
+.container .font12 {
+  color: #999;
+  font-size: 12px !important;
+  border: 1px #ccc;
+  padding: 0 0;
 }
 /*# sourceMappingURL=test.css.map */
