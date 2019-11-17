@@ -1,0 +1,52 @@
+body {
+  background: #e46a6a;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: #880e4f;
+  }
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 1000px;
+  height: 100px;
+  background: #111;
+}
+
+nav {
+  width: 1000px;
+  height: 100px;
+  background: #222;
+}
+
+aside {
+  width: 300px;
+  height: 600px;
+  background: #b86060;
+  float: left;
+}
+
+section {
+  width: 700px;
+  height: 600px;
+  background: #444;
+  float: left;
+}
+
+footer {
+  width: 1000px;
+  height: 100px;
+  background: #555;
+  clear: both;
+}
+/*# sourceMappingURL=test2.css.map */
