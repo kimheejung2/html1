@@ -1,0 +1,95 @@
+
+
+body {
+  background: rgb(255, 255, 255);
+}
+// 화면너비가 0~1200
+@media (max-width: 1220px) {
+  body {
+    #wrap {
+      widht: 95%;
+    }
+  }
+}
+// 화면너비가 0~768
+@media (max-width: 768px) {
+  #wrap {
+    widht: 95%;
+  }
+}
+
+// 화면너비가 0~480
+@media (max-width: 768px) {
+  #wrap {
+    widht: 100%;
+  }
+  header {
+      height: 300px;
+  }
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+header {
+  width: 1000px;
+  height: 100px;
+  background: rgb(162, 184, 66);
+}
+
+
+aside {
+  width: 700px;
+  height: 600px;
+  background: rgb(173, 199, 81);
+  float: left;
+}
+
+section {
+  width: 300px;
+  background: #444;
+  float: left;
+  .section2 {
+    width: 300px;
+    height: 300px;
+    background: rgb(153, 79, 79);
+    padding: 0px;
+   .accordion-heading {
+      text-align: left;
+      padding: 15px;
+      background: rgb(15, 82, 170);
+      .im1 {
+       
+        svg.sample {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  nav {
+    width: 300px;
+    height: 700px;
+    background: #222;
+  }
+}
+footer {
+  width: 1000px;
+  height: 100px;
+  background: #555;
+  clear: both;
+}
+
+
+#sample {
+  background-image: url(freesample.svg);
+  background-size: contain;
+  width: 354px;
+  height: 294px;
+  display: inline-block;
+}
