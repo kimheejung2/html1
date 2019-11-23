@@ -2,9 +2,24 @@ body {
   background: #e46a6a;
 }
 
-@media (max-width: 800px) {
-  body {
-    background: #880e4f;
+@media (max-width: 1220px) {
+  body #wrap {
+    widht: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  #wrap {
+    widht: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  #wrap {
+    widht: 100%;
+  }
+  header {
+    height: 300px;
   }
 }
 
