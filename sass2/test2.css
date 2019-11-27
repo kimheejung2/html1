@@ -70,6 +70,11 @@ section .section2 .accordion-heading .im1 svg.sample {
   display: inline-block;
 }
 
+section .section2 .accordion-heading .im1 .icon1 {
+  width: 16px;
+  height: 16px;
+}
+
 section nav {
   width: 300px;
   height: 700px;
@@ -89,5 +94,13 @@ footer {
   width: 354px;
   height: 294px;
   display: inline-block;
+}
+
+#asas .st0 {
+  fill: #707070;
+}
+
+#asas .st1 {
+  fill: #121B3D;
 }
 /*# sourceMappingURL=test2.css.map */
