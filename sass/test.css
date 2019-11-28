@@ -85,13 +85,19 @@ a:hover img {
   display: flex;
   width: 80px;
   height: 35px;
-  background-color: #187cc2;
   border-radius: 3px;
   color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border: 0px;
+}
+
+.container .bar .input-color {
+  background: #2e4299;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#4cbff3), to(#2e4299));
+  background: linear-gradient(to right, #4cbff3, #2e4299);
 }
 
 .container .font12 {
