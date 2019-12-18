@@ -17,11 +17,13 @@ body {
 }
 
 section {
-  width: 800px;
-  height: 600px;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center center;
   padding: 150px 0px 0px 0px;
   background-image: url(images/topim.png);
-  border: 1px;
 }
 
 .header {
