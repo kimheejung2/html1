@@ -30,10 +30,14 @@ section .left-menu01 {
   width: 201px;
   height: 431px;
   position: relative;
-  padding: 150px 40px 0px 0px;
+  padding: 80px 40px 0px 0px;
   margin: 0px 0px 0px 15px;
   background-position: center center;
   background-image: url(images/leftmenuim.png);
+}
+
+section .left-menu01-text {
+  padding: 90px 40px 0px 0px;
 }
 
 .header {
