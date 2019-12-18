@@ -16,6 +16,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+section {
+  width: 800px;
+  height: 600px;
+  padding: 150px 0px 0px 0px;
+  background-image: url(images/topim.png);
+  border: 1px;
+}
+
 .header {
   position: fixed;
   z-index: 5;
