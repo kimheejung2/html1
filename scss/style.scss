@@ -17,7 +17,7 @@ $menu-color: #6aaed5;
       padding: 20px 20px 20px 20px;
       right: 15px;
     }
-   
+
     .image-01 {
       width: 251px;
     }
@@ -25,12 +25,16 @@ $menu-color: #6aaed5;
       float: left;
     }
     .left-menu01 {
-      width: 400px;
-      height: 100px;
-        background-image: url(images/leftmenuim.png);
+      width: 353px !important;
+      height: 158px !important;
+      background-image: url(images/leftmenuim-sp.png) !important;
+      padding: 150px 100px 0px 0px !important;
+      margin: 230px 0px 0px 9px !important;
+    }
+    section {
+      height: 385px !important;
     }
   }
-  
 }
 
 * {
@@ -39,7 +43,7 @@ $menu-color: #6aaed5;
 
 body {
   min-height: 100vh;
-  background: $primary-color;
+  background: #F7F5E9;
   font-family: "Open Sans";
   color: white;
   line-height: 1.5;
@@ -63,7 +67,6 @@ section {
     background-position: center center;
     background-image: url(images/leftmenuim.png);
   }
-  
 }
 .header {
   position: fixed;
@@ -313,4 +316,3 @@ main {
 .image-02 {
   max-height: 54px !important;
 }
-
