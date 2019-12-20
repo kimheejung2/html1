@@ -20,6 +20,7 @@ body {
   position: fixed;
   z-index: 5;
   width: 100%;
+  background-color: rgba(213, 231, 245, 0.77);
 }
 
 .header .top-logo {
@@ -28,7 +29,7 @@ body {
 }
 
 .header .top-logo .logo-img {
-  max-height: 82px !important;
+  max-height: 70px !important;
 }
 
 .burger {
@@ -40,7 +41,7 @@ body {
   background-color: #6aaed5;
   width: 115px;
   border-radius: 36px 36px 36px 71px;
-  height: 133px;
+  height: 100px;
   padding: 45px;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
@@ -263,6 +264,9 @@ body {
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
+  .header {
+    background-color: rgba(213, 231, 245, 0.77);
+  }
   .header .top-logo {
     float: left;
   }
@@ -282,8 +286,111 @@ body {
     padding: 150px 100px 0px 0px !important;
     margin: 230px 0px 0px 9px !important;
   }
-  section {
-    height: 385px !important;
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+    height: 375px;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 0px 0px 0px;
+    background-image: url(images/topim.png);
+  }
+  .section .left-menu01 {
+    width: 201px;
+    height: 431px;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    background-position: center center;
+    background-image: url(images/leftmenuim.png);
+  }
+  .section .left-menu01 .left-menu01-text1 {
+    text-align: center !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+  }
+  .section .left-menu01 .left-menu01-text2 {
+    text-align: center !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+  }
+  .section .left-menu01 .left-menu01-img1 {
+    padding: 0px 20px 0px 0px;
+  }
+  .section .left-menu01 .left-menu01-img2 {
+    padding: 20px 0px 3px 10px;
+  }
+  .section .container {
+    margin: 800px 30px -220px 20px;
+    width: 350px;
+  }
+  .section .container .label1 {
+    font-size: 14px;
+    margin: 0px;
+    font-weight: bold;
+  }
+  .section .container .bar {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin: 0px;
+  }
+  .section .container .bar .form-control {
+    height: 40px;
+    width: 595px;
+    resize: none;
+    border-radius: 15px;
+    border: 1px solid #C2C9D2;
+    margin: 0 10px 0px 0px;
+    padding: 0px 0px 0px 40px;
+  }
+  .section .container .bar .font12 {
+    height: 30px;
+    margin: 10px;
+    width: 80%;
+    resize: none;
+    padding: 8px 16px;
+  }
+  .section .container .bar .left-imput {
+    float: left;
+    height: 30px;
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section .container .bar .input-botton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90px;
+    height: 40px;
+    background-color: #6AAED5;
+    border-radius: 15px 15px 15px 30px;
+    color: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 0px;
+  }
+  .section .container .font12 {
+    color: #999;
+    font-size: 12px !important;
+    border: 1px #ccc;
+    padding: 0 0;
   }
 }
 
@@ -317,17 +424,20 @@ main h1 > a {
   font-weight: 300;
 }
 
-section {
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: 100%;
   height: 700px;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   padding: 150px 0px 0px 0px;
   background-image: url(images/topim.png);
 }
 
-section .left-menu01 {
+.section .left-menu01 {
   width: 201px;
   height: 431px;
   position: relative;
@@ -337,7 +447,7 @@ section .left-menu01 {
   background-image: url(images/leftmenuim.png);
 }
 
-section .left-menu01 .left-menu01-text1 {
+.section .left-menu01 .left-menu01-text1 {
   text-align: center !important;
   text-decoration: none;
   font-size: 14px;
@@ -345,7 +455,7 @@ section .left-menu01 .left-menu01-text1 {
   color: white;
 }
 
-section .left-menu01 .left-menu01-text2 {
+.section .left-menu01 .left-menu01-text2 {
   text-align: center !important;
   text-decoration: none;
   font-size: 14px;
@@ -353,11 +463,83 @@ section .left-menu01 .left-menu01-text2 {
   color: white;
 }
 
-section .left-menu01 .left-menu01-img1 {
+.section .left-menu01 .left-menu01-img1 {
   padding: 0px 20px 0px 0px;
 }
 
-section .left-menu01 .left-menu01-img2 {
+.section .left-menu01 .left-menu01-img2 {
   padding: 20px 0px 3px 10px;
+}
+
+.container {
+  margin: 400px 30px 20px 20px;
+  width: 596px;
+}
+
+.container .label1 {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.container .bar {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin: 0px;
+}
+
+.container .bar .form-control {
+  height: 50px;
+  width: 595px;
+  resize: none;
+  border-radius: 15px;
+  border: 1px solid #C2C9D2;
+  margin: 0 10px 0px 0px;
+  padding: 0px 0px 0px 40px;
+}
+
+.container .bar .font12 {
+  height: 30px;
+  margin: 10px;
+  width: 80%;
+  resize: none;
+  padding: 8px 16px;
+}
+
+.container .bar .left-imput {
+  float: left;
+  height: 30px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .bar .input-botton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 137px;
+  height: 49px;
+  background-color: #6AAED5;
+  border-radius: 15px 15px 15px 30px;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0px;
+}
+
+.container .font12 {
+  color: #999;
+  font-size: 12px !important;
+  border: 1px #ccc;
+  padding: 0 0;
 }
 /*# sourceMappingURL=style.css.map */
