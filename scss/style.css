@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,7 +10,7 @@ li {
 
 body {
   min-height: 100vh;
-  background: #d5e7f5;
+  background-image: url(images/topbgim3.png);
   font-family: "Open Sans";
   color: white;
   line-height: 1.5;
@@ -238,7 +239,134 @@ body {
           transition-delay: 0.6s;
 }
 
+/* tablet画面 */
 @media screen and (max-width: 768px) {
+  ul.menu__list,
+  div.menu__brand {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu__list--active,
+  div.menu__brand--active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .menu__list {
+    height: 75vh;
+    background: #6aaed5;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  .menu__link {
+    font-size: 24px;
+  }
+  .menu__brand {
+    height: 25vh;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .header {
+    background-color: rgba(213, 231, 245, 0.77);
+  }
+  .header .top-logo .logo-img {
+    max-height: 55px !important;
+  }
+  .burger {
+    width: 61px;
+    height: 71px;
+    padding: 20px 20px 20px 20px;
+    right: 15px;
+  }
+  .left-menu01 {
+    width: 703px !important;
+    height: 130px !important;
+    background-color: #6aaed5;
+    border-radius: 36px 36px 36px 71px;
+    padding: 150px 100px 0px 0px !important;
+    margin: 230px 0px 0px 9px !important;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+    height: 700px !important;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 0px 0px 0px;
+    background-image: url(images/topim.png);
+    max-height: 100%;
+  }
+  .section .left-menu01 {
+    width: 201px;
+    height: 431px;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    background-position: center;
+    background-image: url(images/leftmenuim.png);
+  }
+  .section .left-menu01 .left-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+  }
+  .section .left-menu01 .left-flex2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 370px;
+  }
+  .section .left-menu01 .left-menu01-text1 {
+    text-align: center !important;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    width: 300px;
+  }
+  .section .left-menu01 .left-menu01-text2 {
+    text-align: center !important;
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    width: 100px;
+  }
+  .section .container {
+    margin: 0px 30px -180px 20px;
+    width: 780px;
+  }
+  .section .container .label1 {
+    font-size: 13px;
+    margin: 0px;
+    font-weight: bold;
+  }
+  .section .container .bar .input-botton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90px;
+    height: 50px;
+  }
+}
+
+/* sp画面 */
+@media screen and (max-width: 512px) {
   ul.menu__list,
   div.menu__brand {
     float: none;
@@ -276,13 +404,13 @@ body {
   .burger {
     width: 61px;
     height: 71px;
-    padding: 20px 20px 20px 20px;
     right: 15px;
   }
   .left-menu01 {
     width: 353px !important;
-    height: 158px !important;
-    background-image: url(images/leftmenuim-sp.png) !important;
+    height: 130px !important;
+    background-color: #6aaed5;
+    border-radius: 23px 23px 23px 65px;
     padding: 150px 100px 0px 0px !important;
     margin: 230px 0px 0px 9px !important;
   }
@@ -293,7 +421,7 @@ body {
             flex-direction: column-reverse;
     position: relative;
     width: 100%;
-    height: 600px !important;
+    height: 500px !important;
     background-size: cover;
     background-position: center center;
     padding: 0px 0px 0px 0px;
@@ -306,72 +434,55 @@ body {
     position: relative;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
-    background-position: center center;
+    background-position: center;
     background-image: url(images/leftmenuim.png);
+  }
+  .section .left-menu01 .left-flex {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+  }
+  .section .left-menu01 .left-flex .left-menu01-img1 {
+    max-height: 60px !important;
+  }
+  .section .left-menu01 .left-flex2 {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+  }
+  .section .left-menu01 .left-flex2 .left-menu01-img2 {
+    max-height: 60px !important;
   }
   .section .left-menu01 .left-menu01-text1 {
     text-align: center !important;
     text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: -80px;
     font-size: 14px;
     font-family: inherit;
     color: white;
+    width: 300px;
   }
   .section .left-menu01 .left-menu01-text2 {
     text-align: center !important;
     text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: 30px;
     font-size: 14px;
     font-family: inherit;
     color: white;
-  }
-  .section .left-menu01 .left-menu01-img1 {
-    padding: 0px 20px 0px 0px;
-  }
-  .section .left-menu01 .left-menu01-img2 {
-    padding: 20px 0px 3px 10px;
+    width: 100px;
   }
   .section .container {
-    margin: 800px 30px -220px 20px;
-    width: 350px;
+    margin: 0px 30px -210px 20px;
+    width: 350px !important;
   }
   .section .container .label1 {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0px;
     font-weight: bold;
-  }
-  .section .container .bar {
-    display: block;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    margin: 0px;
-  }
-  .section .container .bar .form-control {
-    height: 40px;
-    width: 595px;
-    resize: none;
-    border-radius: 15px;
-    border: 1px solid #C2C9D2;
-    margin: 0 10px 0px 0px;
-    padding: 0px 0px 0px 40px;
-  }
-  .section .container .bar .font12 {
-    height: 30px;
-    margin: 10px;
-    width: 80%;
-    resize: none;
-    padding: 8px 16px;
-  }
-  .section .container .bar .left-imput {
-    float: left;
-    height: 30px;
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .section .container .bar .input-botton {
     display: -webkit-box;
@@ -379,17 +490,13 @@ body {
     display: flex;
     width: 90px;
     height: 40px;
-    background-color: #6AAED5;
-    border-radius: 15px 15px 15px 30px;
-    color: #fff;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 0px;
+  }
+  .section .container .bar .form-control {
+    height: 40px;
   }
   .section .container .font12 {
     color: #999;
-    font-size: 12px !important;
+    font-size: 9px !important;
     border: 1px #ccc;
     padding: 0 0;
   }
@@ -503,7 +610,7 @@ main h1 > a {
   width: 595px;
   resize: none;
   border-radius: 15px;
-  border: 1px solid #C2C9D2;
+  border: 1px solid #c2c9d2;
   margin: 0 10px 0px 0px;
   padding: 0px 0px 0px 40px;
 }
@@ -531,7 +638,7 @@ main h1 > a {
   display: flex;
   width: 137px;
   height: 49px;
-  background-color: #6AAED5;
+  background-color: #6aaed5;
   border-radius: 15px 15px 15px 30px;
   color: #fff;
   -webkit-box-pack: center;
