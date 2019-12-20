@@ -8,6 +8,15 @@ $menu-color: #6aaed5;
 @mixin tablet {
   @media screen and (max-width: 768px) {
     @content;
+    .header {
+     
+      .top-logo {
+        float: left;
+        .logo-img {
+          max-height: 35px !important;
+        }
+      }
+    }
     .burger {
       width: 61px;
       height: 71px;
@@ -25,7 +34,10 @@ $menu-color: #6aaed5;
       height: 385px !important;
     }
   }
+  
 }
+
+
 
 * {
   box-sizing: border-box;
