@@ -4,15 +4,10 @@
 @import "responsible/width768";  
 @import "util/debug";  
 
-$primary-color: #d5e7f5;
+$primary-color: #F7F5E9;
 $menu-color: #6aaed5;
 
 //@include debugDiv();
-
-body {
-  background-color: #F7F5E9;
-}
-
 
 @mixin easeOut {
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -57,17 +52,14 @@ body {
 
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 li {
   list-style: none;
 }
-
 body {
   min-height: 100vh;
-  background-color: #d5e7f5;
+  background-color: $primary-color;
   font-family: "Open Sans";
   color: white;
   line-height: 1.5;
@@ -82,16 +74,13 @@ body {
   right: 25px;
   top: 25px;
   cursor: pointer;
-  background-color: #6aaed5;
+  background-color: $menu-color;
   width: 115px;
   border-radius: 36px 36px 36px 71px;
   height: 100px;
   padding: 45px;
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-  -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
+  transform: rotateY(0);
+  @include easeOut;
 
   &__patty {
     width: 28px;
@@ -100,27 +89,27 @@ body {
     background: white;
     @include easeOut; 
 
-.burger__patty:last-child {
-  margin-bottom: 0;
-}
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-.burger--close {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
+  // transform burger into 'x'
+  &--close {
+    transform: rotate(180deg);
 
-.burger--close .burger__patty:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(4px, 4px);
-          transform: rotate(45deg) translate(4px, 4px);
-}
-
-.burger--close .burger__patty:nth-child(2) {
-  opacity: 0;
-}
-
-.burger--close .burger__patty:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(5px, -4px);
-          transform: rotate(-45deg) translate(5px, -4px);
+    .burger__patty {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -4px);
+      }
+    }
+  }
 }
 
 .menu {
@@ -130,7 +119,9 @@ body {
   width: 100%;
   visibility: hidden;
   text-align: left !important;
-}
+  &--active {
+    visibility: visible;
+  }
 
   &__brand,
   &__list {
@@ -187,29 +178,10 @@ body {
     float: left;
     @include easeOut;
 
-.menu__brand, .menu__list {
-  background: #6aaed5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  float: left;
-  width: 50%;
-  height: 100vh;
-  overflow: hidden;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    &--active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
   &__text {
     display: inline-block;
@@ -223,22 +195,19 @@ body {
     
     text-decoration: none;
 
-.menu__list {
-  margin: 0;
-  padding: 0;
-  background: #aab9c4;
-  list-style-type: none;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-  -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
+    @include easeOut;
 
-.menu__list--active {
-  background: #6aaed5;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      background: white;
+      transform: translateX(-50%);
+      @include easeOut;
+    }
 
     &:hover {
       &:before {
@@ -283,29 +252,20 @@ p {
 
 main {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  justify-content: center;
   padding: 8vw;
-}
 
-main h1 > a {
-  color: white;
-  text-decoration: none;
-  font-size: 48px;
-  font-weight: 300;
+  h1 > a {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 300;
+  }
 }
 
 .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 100%;
@@ -315,42 +275,39 @@ main h1 > a {
   padding: 150px 0px 0px 0px;
   background-image: url(images/topim.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  
   background-position: center;
-}
+ 
 
-.section .left-menu01 {
-  width: 201px;
-  height: 431px;
-  position: relative;
-  padding: 20px 40px 0px 10px;
-  margin: 0px 0px 0px 15px;
-  background-position: center center;
-  background-image: url(images/leftmenuim.png);
-}
-
-.section .left-menu01 .left-menu01-text1 {
-  text-align: center !important;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: inherit;
-  color: white;
-}
-
-.section .left-menu01 .left-menu01-text2 {
-  text-align: center !important;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: inherit;
-  color: white;
-}
-
-.section .left-menu01 .left-menu01-img1 {
-  padding: 0px 20px 0px 0px;
-}
-
-.section .left-menu01 .left-menu01-img2 {
-  padding: 20px 0px 3px 10px;
+  .left-menu01 {
+    width: 201px;
+    height: 431px;
+    position: relative;
+    padding: 20px 40px 0px 10px;
+    margin: 0px 0px 0px 15px;
+    background-position: center center;
+    background-image: url(images/leftmenuim.png);
+    .left-menu01-text1 {
+      text-align: center !important;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: inherit;
+      color: white;
+    }
+    .left-menu01-text2 {
+      text-align: center !important;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: inherit;
+      color: white;
+    }
+    .left-menu01-img1 {
+      padding: 0px 20px 0px 0px;
+    }
+    .left-menu01-img2 {
+      padding: 20px 0px 3px 10px;
+    }
+  }
 }
 
 .container {
@@ -418,4 +375,3 @@ main h1 > a {
     padding: 0 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
