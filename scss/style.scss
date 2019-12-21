@@ -9,10 +9,238 @@ $menu-color: #6aaed5;
 
 //@include debugDiv();
 
+@include header();
+
 @mixin easeOut {
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+@mixin tablet {
+    /* tablet画面 */
+  
+  @media screen and (max-width: 768px) {
+
+    @content;
+    .header {
+      background-color: rgba(213, 231, 245, 0.77);
+      .top-logo {
+        .logo-img {
+          max-height: 55px !important;
+        }
+      }
+    }
+    .burger {
+      width: 61px !important;
+      height: 71px !important;
+      padding: 20px 20px 20px 20px !important;
+      right: 15px !important;
+    }
+    .left-menu01 {
+      width: 703px !important;
+      height: 130px !important;
+      background-color: #6aaed5;
+      border-radius: 36px 36px 36px 71px;
+      padding: 150px 100px 0px 0px !important;
+      margin: 230px auto 0px auto !important;
+    }
+    .section {
+      flex-direction: column-reverse;
+      position: relative;
+      height: 700px !important;
+      max-height: 100%;
+  
+      .left-menu01 {
+        width: 201px;
+        height: 431px;
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        background-position: center;
+        background-image: url(images/leftmenuim.png);
+        .left-flex {
+          display: flex;
+          position: absolute;
+          top:0px;
+          left:40px;
+        }
+        .left-flex2 {
+          display: flex;
+          position: absolute;
+          top:20px;
+          left:370px;
+        }
+        .left-menu01-text1 {
+          text-align: center !important;
+          text-decoration: none;
+          position: absolute;
+          top:30px;
+          left:90px;
+          font-size: 14px;
+          font-family: inherit;
+          color: white;
+          
+          width: 300px;
+        }
+        .left-menu01-text2 {
+          text-align: center !important;
+          text-decoration: none;
+          position: absolute;
+          top:15px;
+          left:110px;
+          font-size: 14px;
+          font-family: inherit;
+          color: white;
+         
+          width: 100px;
+          
+        }
+       
+      }
+      .container {
+        margin: 0px 30px -190px 70px;
+        width: 600px;
+        .label1 {
+          font-size: 13px;
+          margin: 0px;
+          font-weight: bold;
+        }
+        .bar {
+          .input-botton {
+            display: flex;
+            width: 90px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  /* sp画面 */
+  @media screen and (max-width: 512px) {
+    @content;
+    
+    
+    .header {
+      background-color: rgba(213, 231, 245, 0.77);
+      .top-logo {
+        float: left;
+        .logo-img {
+          max-height: 45px !important;
+        }
+      }
+    }
+    .burger {
+      width: 61px !important;
+      height: 71px !important;
+      right: 15px !important;
+    }
+    .left-menu01 {
+      width: 353px !important;
+      height: 130px !important;
+      background-color: #6aaed5;
+      border-radius: 23px 23px 23px 65px;
+      padding: 150px 100px 0px 0px !important;
+      margin: 230px 0px 0px 9px !important;
+    }
+    .section {
+      flex-direction: column-reverse;
+      position: relative;
+      width: 100%;
+      height: 500px !important;
+      background-size: cover;
+      background-position: center center;
+      padding: 0px 0px 0px 0px;
+
+      background-image: url(images/topim.png);
+      max-width: 100%;
+      max-height: 100%;
+
+      .left-menu01 {
+        width: 201px;
+        height: 431px;
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        background-position: center;
+        background-image: url(images/leftmenuim.png);
+        .left-flex {
+          
+          position: absolute;
+          top:0px;
+          left:50px;
+          .left-menu01-img1{
+            max-height: 60px !important;
+          }
+        }
+        .left-flex2 {
+          
+          position: absolute;
+          top:0px;
+          left:180px;
+          .left-menu01-img2{
+            max-height: 60px !important;
+          }
+        }
+        .left-menu01-text1 {
+          text-align: center !important;
+          text-decoration: none;
+          position: absolute;
+          top:50px;
+          left:-80px;
+          font-size: 14px;
+          
+          width: 300px;
+        }
+        .left-menu01-text2 {
+          text-align: center !important;
+          text-decoration: none;
+          position: absolute;
+          top:50px;
+          left:30px;
+          font-size: 14px;
+          font-family: inherit;
+          
+         
+          width: 100px;
+          
+        }
+       
+      }
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -210px;
+        width: 350px !important;
+
+        .label1 {
+          font-size: 12px;
+          margin: 0px;
+          font-weight: bold;
+        }
+
+        .bar {
+          .input-botton {
+            display: flex;
+            width: 90px;
+            height: 40px;
+          }
+          .form-control {
+            height: 40px;
+            padding-left: 10px !important;
+          }
+        }
+
+        .font12 {
+          color: #999;
+          font-size: 9px !important;
+          border: 1px #ccc;
+          padding: 0 0;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
   ul.menu__list,
   div.menu__brand {
     float: none;
@@ -20,14 +248,14 @@ $menu-color: #6aaed5;
     min-height: 0;
 
     &--active {
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0) !important;
     }
   }
 
   .menu__list {
-    height: 75vh;
+    height: 75vh !important;
     background: $menu-color;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0) !important;
   }
 
   .menu__link {
@@ -38,17 +266,7 @@ $menu-color: #6aaed5;
     height: 25vh;
     transform: translate3d(100%, 0, 0);
   }
-  /* tablet画面 */
-  
-  @media screen and (max-width: 768px) {
-
-    @include whenWidth768();
-  }
-  /* sp画面 */
-  @media screen and (max-width: 512px) {
-    
-    @include whenWidth512();
-  }
+}
 
 
 * {
@@ -66,7 +284,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@include header();
 
 .burger {
   position: absolute;
