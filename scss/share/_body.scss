@@ -1,0 +1,10 @@
+@mixin body {
+    body {
+        min-height: 100vh;
+        background-color: $primary-color;
+        font-family: "Open Sans";
+        color: white;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+}
