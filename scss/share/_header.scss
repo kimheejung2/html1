@@ -1,0 +1,16 @@
+@mixin header() {
+
+    .header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: rgba(213, 231, 245, 0.77);
+    .top-logo {
+        text-align: center;
+        padding: 34px;
+        .logo-img {
+        max-height: 70px ;
+        }
+    }
+    }
+}

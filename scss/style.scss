@@ -1,246 +1,60 @@
+ 
+@import "share/header";  
+@import "responsible/width512";  
+@import "responsible/width768";  
+@import "util/debug";  
+
 $primary-color: #d5e7f5;
 $menu-color: #6aaed5;
+
+//@include debugDiv();
+
+body {
+  background-color: #F7F5E9;
+}
+
 
 @mixin easeOut {
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@mixin tablet {
+  ul.menu__list,
+  div.menu__brand {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &--active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu__list {
+    height: 75vh;
+    background: $menu-color;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .menu__link {
+    font-size: 24px;
+  }
+
+  .menu__brand {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
   /* tablet画面 */
+  
   @media screen and (max-width: 768px) {
-    @content;
-    body {
-     
-      background-color: #F7F5E9;
-     
-    }
-    .header {
-      background-color: rgba(213, 231, 245, 0.77);
-      .top-logo {
-        .logo-img {
-          max-height: 55px !important;
-        }
-      }
-    }
-    .burger {
-      width: 61px;
-      height: 71px;
-      padding: 20px 20px 20px 20px;
-      right: 15px;
-    }
-    .left-menu01 {
-      width: 703px !important;
-      height: 130px !important;
-      background-color: #6aaed5;
-      border-radius: 36px 36px 36px 71px;
-      padding: 150px 100px 0px 0px !important;
-      margin: 230px 0px 0px 9px !important;
-    }
-    .section {
-      flex-direction: column-reverse;
-      position: relative;
-      width: 100%;
-      height: 700px !important;
-      background-size: cover;
-      background-position: center;
-      padding: 0px 0px 0px 0px;
 
-      background-image: url(images/topim.png);
-      
-      max-height: 100%;
-
-      .left-menu01 {
-        width: 201px;
-        height: 431px;
-        position: relative;
-        padding: 0px 0px 0px 0px;
-        margin: 0px 0px 0px 0px;
-        background-position: center;
-        background-image: url(images/leftmenuim.png);
-        .left-flex {
-          display: flex;
-          position: absolute;
-          top:0px;
-          left:40px;
-        }
-        .left-flex2 {
-          display: flex;
-          position: absolute;
-          top:20px;
-          left:370px;
-        }
-        .left-menu01-text1 {
-          text-align: center !important;
-          text-decoration: none;
-          position: absolute;
-          top:30px;
-          left:90px;
-          font-size: 14px;
-          font-family: inherit;
-          color: white;
-          
-          width: 300px;
-        }
-        .left-menu01-text2 {
-          text-align: center !important;
-          text-decoration: none;
-          position: absolute;
-          top:15px;
-          left:110px;
-          font-size: 14px;
-          font-family: inherit;
-          color: white;
-         
-          width: 100px;
-          
-        }
-       
-      }
-      .container {
-        margin: 0px 30px -180px 20px;
-        width: 780px;
-        .label1 {
-          font-size: 13px;
-          margin: 0px;
-          font-weight: bold;
-        }
-        .bar {
-          .input-botton {
-            display: flex;
-            width: 90px;
-            height: 50px;
-          }
-        }
-      }
-    }
+    @include whenWidth768();
   }
   /* sp画面 */
   @media screen and (max-width: 512px) {
-    @content;
-    body {
-     
-      background-color: #F7F5E9;
-     
-    }
-    .header {
-      background-color: rgba(213, 231, 245, 0.77);
-      .top-logo {
-        float: left;
-        .logo-img {
-          max-height: 45px !important;
-        }
-      }
-    }
-    .burger {
-      width: 61px;
-      height: 71px;
-      right: 15px;
-    }
-    .left-menu01 {
-      width: 353px !important;
-      height: 130px !important;
-      background-color: #6aaed5;
-      border-radius: 23px 23px 23px 65px;
-      padding: 150px 100px 0px 0px !important;
-      margin: 230px 0px 0px 9px !important;
-    }
-    .section {
-      flex-direction: column-reverse;
-      position: relative;
-      width: 100%;
-      height: 500px !important;
-      background-size: cover;
-      background-position: center center;
-      padding: 0px 0px 0px 0px;
-
-      background-image: url(images/topim.png);
-      max-width: 100%;
-      max-height: 100%;
-
-      .left-menu01 {
-        width: 201px;
-        height: 431px;
-        position: relative;
-        padding: 0px 0px 0px 0px;
-        margin: 0px 0px 0px 0px;
-        background-position: center;
-        background-image: url(images/leftmenuim.png);
-        .left-flex {
-          
-          position: absolute;
-          top:0px;
-          left:50px;
-          .left-menu01-img1{
-            max-height: 60px !important;
-          }
-        }
-        .left-flex2 {
-          
-          position: absolute;
-          top:0px;
-          left:180px;
-          .left-menu01-img2{
-            max-height: 60px !important;
-          }
-        }
-        .left-menu01-text1 {
-          text-align: center !important;
-          text-decoration: none;
-          position: absolute;
-          top:50px;
-          left:-80px;
-          font-size: 14px;
-          font-family: inherit;
-          color: white;
-          
-          width: 300px;
-        }
-        .left-menu01-text2 {
-          text-align: center !important;
-          text-decoration: none;
-          position: absolute;
-          top:50px;
-          left:30px;
-          font-size: 14px;
-          font-family: inherit;
-          color: white;
-         
-          width: 100px;
-          
-        }
-       
-      }
-      .container {
-        margin: 0px 30px -210px 20px;
-        width: 350px !important;
-
-        .label1 {
-          font-size: 12px;
-          margin: 0px;
-          font-weight: bold;
-        }
-
-        .bar {
-          .input-botton {
-            display: flex;
-            width: 90px;
-            height: 40px;
-          }
-          .form-control {
-            height: 40px;
-          }
-        }
-
-        .font12 {
-          color: #999;
-          font-size: 9px !important;
-          border: 1px #ccc;
-          padding: 0 0;
-        }
-      }
-    }
+    
+    @include whenWidth512();
   }
-}
+
 
 * {
   box-sizing: border-box;
@@ -257,19 +71,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.header {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
-  background-color: rgba(213, 231, 245, 0.77);
-  .top-logo {
-    text-align: center;
-    padding: 34px;
-    .logo-img {
-      max-height: 70px !important;
-    }
-  }
-}
+@include header();
 
 .burger {
   position: absolute;
@@ -290,7 +92,7 @@ body {
     height: 2px;
     margin: 0 0 4px 0;
     background: white;
-    @include easeOut;
+    @include easeOut; 
 
     &:last-child {
       margin-bottom: 0;
@@ -378,7 +180,6 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     border: 0;
-    text-align: left !important;
     float: left;
     @include easeOut;
 
@@ -391,10 +192,12 @@ body {
     display: inline-block;
     position: relative;
     font-size: 16px;
-    padding: 15px 0;
+    width: 400px;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
     font-weight: 300;
     color: white;
-    text-align: left !important;
+    
     text-decoration: none;
 
     @include easeOut;
@@ -418,9 +221,23 @@ body {
     }
     .menu__img {
       max-height: 30px !important;
+      padding: 0px 15px 0px 0px;
+      vertical-align: middle;
+      
     }
+    
   }
-
+  &__text2 {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+  padding: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 100px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  text-align: left !important;
+  }
   // add delay to each menu item
   @for $x from 1 through 6 {
     .menu__item:nth-child(#{$x}) {
@@ -429,34 +246,6 @@ body {
   }
 }
 
-// responsive tablet view
-@include tablet {
-  ul.menu__list,
-  div.menu__brand {
-    float: none;
-    width: 100%;
-    min-height: 0;
-
-    &--active {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .menu__list {
-    height: 75vh;
-    background: $menu-color;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  .menu__link {
-    font-size: 24px;
-  }
-
-  .menu__brand {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-  }
-}
 
 h1,
 h2,
@@ -528,7 +317,7 @@ main {
 
 .container {
   margin: 400px 30px 20px 20px;
-  width: 596px;
+  width: 600px;
   .label1 {
     font-size: 14px;
     margin: 0px;
@@ -553,6 +342,11 @@ main {
       border: 1px solid #c2c9d2;
       margin: 0 10px 0px 0px;
       padding: 0px 0px 0px 40px;
+      outline-width: 0;
+    }
+
+    .form-control:focus{
+      border: 1px solid #f00404 !important;
     }
     .font12 {
       height: 30px;

@@ -1,0 +1,124 @@
+
+@mixin whenWidth512() {
+
+  @content;
+  
+    .header {
+      background-color: rgba(213, 231, 245, 0.77);
+      .top-logo {
+        float: left;
+        .logo-img {
+          max-height: 45px !important;
+        }
+      }
+    }
+    .burger {
+      width: 61px !important;
+      height: 71px !important;
+      right: 15px !important;
+    }
+    .left-menu01 {
+      width: 353px !important;
+      height: 130px !important;
+      background-color: #6aaed5;
+      border-radius: 23px 23px 23px 65px;
+      padding: 150px 100px 0px 0px !important;
+      margin: 230px 0px 0px 9px !important;
+    }
+    .section {
+      flex-direction: column-reverse;
+      position: relative;
+      width: 100%;
+      height: 500px !important;
+      background-size: cover;
+      background-position: center center;
+      padding: 0px 0px 0px 0px;
+
+      background-image: url(images/topim.png);
+      max-width: 100%;
+      max-height: 100%;
+
+      .left-menu01 {
+        width: 201px;
+        height: 431px;
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        background-position: center;
+        background-image: url(images/leftmenuim.png);
+        .left-flex {
+          
+          position: absolute;
+          top:0px;
+          left:50px;
+          .left-menu01-img1{
+            max-height: 60px !important;
+          }
+        }
+        .left-flex2 {
+          
+          position: absolute;
+          top:0px;
+          left:180px;
+          .left-menu01-img2{
+            max-height: 60px !important;
+          }
+        }
+        .left-menu01-text1 {
+          text-align: center !important;
+          text-decoration: none;
+          position: absolute;
+          top:50px;
+          left:-80px;
+          font-size: 14px;
+          
+          width: 300px;
+        }
+        .left-menu01-text2 {
+          text-align: center !important;
+          text-decoration: none;
+          position: absolute;
+          top:50px;
+          left:30px;
+          font-size: 14px;
+          font-family: inherit;
+          
+         
+          width: 100px;
+          
+        }
+       
+      }
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -210px;
+        width: 350px !important;
+
+        .label1 {
+          font-size: 12px;
+          margin: 0px;
+          font-weight: bold;
+        }
+
+        .bar {
+          .input-botton {
+            display: flex;
+            width: 90px;
+            height: 40px;
+          }
+          .form-control {
+            height: 40px;
+            padding-left: 10px !important;
+          }
+        }
+
+        .font12 {
+          color: #999;
+          font-size: 9px !important;
+          border: 1px #ccc;
+          padding: 0 0;
+        }
+      }
+    }
+}
