@@ -111,7 +111,7 @@ main {
   background-position: center;
  
 
-  .left-menu01 {
+  .left-menu {
     width: 201px;
     height: 431px;
     position: relative;
@@ -119,25 +119,33 @@ main {
     margin: 0px 0px 0px 15px;
     background-position: center center;
     background-image: url(images/leftmenuim.png);
-    .left-menu01-text1 {
+    .left-menu-text1 {
       text-align: center !important;
-      text-decoration: none;
-      font-size: 14px;
-      font-family: inherit;
+          text-decoration: none;
+          position: absolute;
+          top:130px;
+          left:-50px;
+          font-size: 14px;
+          
+          width: 300px;
       color: white;
     }
-    .left-menu01-text2 {
+    .left-menu-text2 {
       text-align: center !important;
-      text-decoration: none;
-      font-size: 14px;
-      font-family: inherit;
+          text-decoration: none;
+          position: absolute;
+          top:260px;
+          left:-50px;
+          font-size: 14px;
+          
+          width: 300px;
       color: white;
     }
-    .left-menu01-img1 {
-      padding: 0px 20px 0px 0px;
+    .left-menu-img1 {
+      padding: 0px 20px 0px 8px;
     }
-    .left-menu01-img2 {
-      padding: 20px 0px 3px 10px;
+    .left-menu-img2 {
+      padding: 50px 0px 3px 18px;
     }
   }
 }
@@ -168,5 +176,9 @@ main {
     font-size: 12px !important;
     border: 1px #ccc;
     padding: 0 0;
+    width: 760px;
+  }
+  .form-control{
+    font-size: 14px;
   }
 }
