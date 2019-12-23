@@ -8,3 +8,21 @@
         -webkit-font-smoothing: antialiased;
     }
 }
+
+@mixin facility($orderList, $isImpotant : null) {
+    @for $i from 1 through length($orderList) {
+        .facility-flex>:nth-child(#{$i}) {
+          order: nth($orderList, $i) $isImpotant;
+        }
+      }
+}
+
+@mixin facilityFlexForPc {
+    $orderList: 1, 2, 3, 4, 5;
+    @include facility($orderList)
+}
+
+@mixin facilityFlexForMobile {
+    $orderList: 3, 1, 2, 4, 5;
+    @include facility($orderList, unquote("!important"))
+}

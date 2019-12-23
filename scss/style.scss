@@ -14,7 +14,7 @@ $menu-color: #6aaed5;
 //@include debugDiv();
 
 //header CSS
-@include header;
+@include header; 
 
 //body CSS
 @include body;
@@ -260,7 +260,14 @@ article {
     }
     .facility-flex {
       display: flex;
+      flex-direction: row; /* 세로로 정렬하겠다는 의미 */
       padding: 0px;
+    }
+    
+    @include facilityFlexForPc();
+
+    .hide-pc-facility-butten {
+      display: none;
     }
     .facility-butten1 {
       display: block;

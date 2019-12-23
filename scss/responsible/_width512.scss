@@ -1,4 +1,10 @@
 @mixin whenWidth512() {
+
+  article {
+    .article-bg {
+      @include facilityFlexForMobile();
+    }
+  }
   .header {
     background-color: rgba(213, 231, 245, 0.77);
     .top-logo {
@@ -33,9 +39,21 @@
     left: 0px;
     width: 100%;
    }
-   .facility-flex {
+
+    
+   .hide-mobile-facility-butten {
+    display: none !important;
+  }
+
+  .hide-pc-facility-butten {
     display: block !important;
-    padding: 0px;
+    ul {
+      display: flex !important;
+    }
+  }
+
+   .facility-flex {
+    flex-direction: column !important; 
   }
    .article-bg{
     border-radius: 51px 51px 51px 120px !important;
