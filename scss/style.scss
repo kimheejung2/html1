@@ -144,7 +144,8 @@ main {
 
 .container {
   margin: 400px 30px 20px 20px;
-  width: 600px;
+  width: 800px;
+  overflow: hidden;
   .label1 {
     font-size: 14px;
     margin: 0px;
@@ -170,6 +171,9 @@ main {
     padding: 0 0;
     width: 760px;
   }
+  .left-imput{
+    height: 50px;
+  }
   .form-control{
     font-size: 14px;
   }
@@ -177,6 +181,7 @@ main {
 
 article {
   .article-bg{
+    overflow: hidden;
     padding: 0px 31px 0px 0px; 
   }
   .article-text {
@@ -184,12 +189,24 @@ article {
     height: 611px;
     background-color: rgb(255, 255, 255);
     border-radius: 88px 88px 88px 185px;
-  }
-  .article-title{
     color: #070707;
-    text-align: center;
-    padding: 26px 0px 0px 0px;
-    background-image: url(images/leftmenuim.png);
+    padding: 12px;
+    .article-title{
+      display: block; 
+      position: relative;
+      overflow: hidden;
+      color: #070707;
+      width:199px;
+      height: 39px;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      left: 40%;
+      background: rgb(253, 221, 221);
+      
+  }
+  
+    
 
   }
 }

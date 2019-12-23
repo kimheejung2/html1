@@ -594,7 +594,8 @@ main h1 > a {
 
 .container {
   margin: 400px 30px 20px 20px;
-  width: 600px;
+  width: 800px;
+  overflow: hidden;
 }
 
 .container .label1 {
@@ -670,11 +671,16 @@ main h1 > a {
   width: 760px;
 }
 
+.container .left-imput {
+  height: 50px;
+}
+
 .container .form-control {
   font-size: 14px;
 }
 
 article .article-bg {
+  overflow: hidden;
   padding: 0px 31px 0px 0px;
 }
 
@@ -683,12 +689,21 @@ article .article-text {
   height: 611px;
   background-color: white;
   border-radius: 88px 88px 88px 185px;
+  color: #070707;
+  padding: 12px;
 }
 
-article .article-title {
+article .article-text .article-title {
+  display: block;
+  position: relative;
+  overflow: hidden;
   color: #070707;
+  width: 199px;
+  height: 39px;
   text-align: center;
-  padding: 26px 0px 0px 0px;
-  background-image: url(images/leftmenuim.png);
+  padding: 0px;
+  margin: 0px;
+  left: 40%;
+  background: #fddddd;
 }
 /*# sourceMappingURL=style.css.map */
