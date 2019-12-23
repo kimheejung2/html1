@@ -17,7 +17,7 @@
 
 body {
   min-height: 100vh;
-  background-color: #F7F5E9;
+  background-color: #f7f5e9;
   font-family: "Open Sans";
   color: white;
   line-height: 1.5;
@@ -133,7 +133,7 @@ body {
 }
 
 .menu__brand {
-  background: #F7F5E9;
+  background: #f7f5e9;
   -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   -webkit-transform: translate3d(0, 100%, 0);
@@ -518,7 +518,10 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   font-weight: 400;
 }
@@ -679,12 +682,13 @@ main h1 > a {
   font-size: 14px;
 }
 
-article .article-bg {
+article .article {
   overflow: hidden;
-  padding: 0px 31px 0px 0px;
+  padding: 0px 31px 0px 31px;
+  margin: 50px 0px 0px 0px;
 }
 
-article .article-text {
+article .article-bg {
   width: 100%;
   height: 611px;
   background-color: white;
@@ -693,17 +697,72 @@ article .article-text {
   padding: 12px;
 }
 
-article .article-text .article-title {
+article .article-bg .article-title1 {
   display: block;
   position: relative;
   overflow: hidden;
-  color: #070707;
+  color: #ffffff;
   width: 199px;
   height: 39px;
   text-align: center;
   padding: 0px;
-  margin: 0px;
+  margin: 27px 0px 0px 0px;
   left: 40%;
-  background: #fddddd;
+  letter-spacing: 0.49em;
+  background-image: url(images/articlebg.png);
+  font-size: 20px;
+  font-family: SourceHanSansJP-Bold, Source Han Sans JP;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+article .article-bg .article-title2 {
+  padding: 0px;
+  margin: 12px 0px 0px 150px;
+  overflow: hidden;
+}
+
+article .article-bg .article-album {
+  padding: 0px;
+  margin: 12px 0px 0px 150px;
+  overflow: hidden;
+}
+
+article .article-bg .articlemore-bg {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  width: 240px;
+  height: 42px;
+  text-align: center;
+  padding: 8px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
+  left: 40%;
+  background-color: #83ceb8;
+  border-radius: 15px 20px 20px 27px;
+}
+
+article .article-bg .articlemore-text {
+  text-decoration: none;
+  color: #ffffff;
+  width: 10px;
+  font-weight: bold;
+}
+
+article .article-bg .articlemore-text2::after {
+  content: "";
+  display: block;
+  font-family: SourceHanSansJP-Bold, Source Han Sans JP;
+  width: 7px;
+  height: 7px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -7px;
 }
 /*# sourceMappingURL=style.css.map */

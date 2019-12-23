@@ -1,20 +1,19 @@
- 
-@import "share/header";  
-@import "share/body";  
-@import "share/burgerMenu";  
-@import "share/popListMenu";  
-@import "util/debug";  
-@import "util/transitions";  
-@import "forms/mainSearch"; 
-@import "responsible/width512";  
-@import "responsible/width768";  
+@import "share/header";
+@import "share/body";
+@import "share/burgerMenu";
+@import "share/popListMenu";
+@import "util/debug";
+@import "util/transitions";
+@import "forms/mainSearch";
+@import "responsible/width512";
+@import "responsible/width768";
 
-$primary-color: #F7F5E9;
+$primary-color: #f7f5e9;
 $menu-color: #6aaed5;
 
 //@include debugDiv();
 
-//header CSS 
+//header CSS
 @include header;
 
 //body CSS
@@ -26,11 +25,9 @@ $menu-color: #6aaed5;
 //burger menu CSS
 @include popListMenu;
 
-
 @mixin tablet {
-    /* tablet画面 */
+  /* tablet画面 */
   @media screen and (max-width: 768px) {
-
     @content;
     @include whenWidth768();
   }
@@ -69,7 +66,6 @@ $menu-color: #6aaed5;
   }
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -77,7 +73,10 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   font-weight: 400;
 }
@@ -107,9 +106,8 @@ main {
   padding: 150px 0px 0px 0px;
   background-image: url(images/topim.png);
   background-repeat: no-repeat;
-  
+
   background-position: center;
- 
 
   .left-menu {
     width: 201px;
@@ -120,14 +118,12 @@ main {
     background-position: center center;
     background-image: url(images/leftmenuim.png);
     .left-menu-text1 {
-     
       text-decoration: none;
       font-size: 14px;
       font-family: inherit;
       color: white;
     }
     .left-menu-text2 {
-     
       text-decoration: none;
       font-size: 14px;
       font-family: inherit;
@@ -152,7 +148,7 @@ main {
     font-weight: bold;
   }
   .bar {
-    display: block; 
+    display: block;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -161,7 +157,7 @@ main {
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     margin: 0px;
-  } 
+  }
   @include mainSearch;
 
   .font12 {
@@ -171,42 +167,90 @@ main {
     padding: 0 0;
     width: 760px;
   }
-  .left-imput{
+  .left-imput {
     height: 50px;
   }
-  .form-control{
+  .form-control {
     font-size: 14px;
   }
 }
 
 article {
-  .article-bg{
+  .article {
     overflow: hidden;
-    padding: 0px 31px 0px 0px; 
+    padding: 0px 31px 0px 31px;
+    margin: 50px 0px 0px 0px;
   }
-  .article-text {
+  .article-bg {
     width: 100%;
     height: 611px;
     background-color: rgb(255, 255, 255);
     border-radius: 88px 88px 88px 185px;
     color: #070707;
     padding: 12px;
-    .article-title{
-      display: block; 
+    .article-title1 {
+      display: block;
       position: relative;
       overflow: hidden;
-      color: #070707;
-      width:199px;
+      color: #ffffff;
+      width: 199px;
       height: 39px;
       text-align: center;
       padding: 0px;
-      margin: 0px;
+      margin: 27px 0px 0px 0px;
       left: 40%;
-      background: rgb(253, 221, 221);
-      
-  }
-  
-    
-
+      letter-spacing: 0.49em;
+      background-image: url(images/articlebg.png);
+      font-size: 20px;
+      font-family: SourceHanSansJP-Bold, Source Han Sans JP;
+      background-size: 95%;
+      background-repeat: no-repeat;
+    }
+    .article-title2 {
+      padding: 0px;
+      margin: 12px 0px 0px 150px;
+      overflow: hidden;
+    }
+    .article-album {
+      padding: 0px;
+      margin: 12px 0px 0px 150px;
+      overflow: hidden;
+    }
+    .articlemore-bg {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+      width: 240px;
+      height: 42px;
+      text-align: center;
+      padding: 8px 0px 0px 0px;
+      margin: 40px 0px 0px 0px;
+      left: 40%;
+      background-color: #83ceb8;
+      border-radius: 15px 20px 20px 27px;
+    }
+    .articlemore-text {
+      text-decoration: none;
+      color: #ffffff;
+      width: 10px;
+      font-weight: bold;
+    }
+    .articlemore-text2::after {
+      content: "";
+      display: block;
+      font-family: SourceHanSansJP-Bold, Source Han Sans JP;
+      width: 7px;
+      height: 7px;
+      border-top: 3px solid rgb(255, 255, 255);
+      border-right: 3px solid rgb(255, 255, 255);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -7px;
+     
+    }
   }
 }
