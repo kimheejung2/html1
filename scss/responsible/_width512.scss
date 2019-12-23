@@ -20,7 +20,35 @@
     border-radius: 23px 23px 23px 65px;
     padding: 150px 100px 0px 0px !important;
     margin: 230px 0px 0px 9px !important;
+    top: 150px;
+    left: 00px;
   }
+
+  article{
+   .article {
+    margin: 20px 0px 0px 0px !important;
+    padding: 0px 11px 0px 11px !important;
+    position: absolute;
+    top: 640px;
+    left: 0px;
+    width: 100%;
+   }
+   .article-bg{
+    border-radius: 51px 51px 51px 120px !important;
+   }
+   .article-title1 {
+    left: 20% !important;
+   }
+   .article-title2{
+    margin: 12px 10px 0px 10px !important;
+
+   }
+   .articlemore-bg{
+    left: 20% !important;
+   }
+  }
+
+
   .section {
     flex-direction: column-reverse;
     position: relative;
@@ -61,16 +89,16 @@
       .left-menu-text1 {
         text-decoration: none;
         position: absolute;
-        top: 50px;
-        left: 0px;
+        top: 50px !important;
+        left: 0px !important;
         font-size: 14px;
         width: 300px;
       }
       .left-menu-text2 {
         text-decoration: none;
         position: absolute;
-        top: 50px;
-        left: 30px;
+        top: 50px !important;
+        left: 30px !important;
         font-size: 14px;
         width: 100px;
       }
@@ -80,6 +108,9 @@
       margin-right: auto;
       margin-bottom: -210px;
       width: 350px !important;
+      position: absolute;
+    top: 380px;
+    left: 0px;
 
       .label1 {
         font-size: 12px;
@@ -96,15 +127,17 @@
         .form-control {
           height: 40px;
           padding-left: 10px !important;
+          border-radius: 10px !important;
         }
       }
+     
 
       .font12 {
         color: #999;
         font-size: 9px !important;
         border: 1px #ccc;
         padding: 0 0;
-        width: 300px;
+        width: 350px !important;
       }
       .form-control {
         font-size: 10px;
