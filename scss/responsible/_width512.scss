@@ -33,8 +33,19 @@
     left: 0px;
     width: 100%;
    }
+   .facility-flex {
+    display: block !important;
+    padding: 0px;
+  }
    .article-bg{
     border-radius: 51px 51px 51px 120px !important;
+    height: 100% !important;
+   }
+   .article-info {
+     width: 320px !important;
+   }
+   .article-info-im2{
+     padding: 0px !important;
    }
    .article-title1 {
     left: 20% !important;
@@ -46,9 +57,10 @@
    .articlemore-bg{
     left: 20% !important;
    }
+   
   }
 
-
+  
   .section {
     flex-direction: column-reverse;
     position: relative;

@@ -432,8 +432,19 @@ body {
     left: 0px;
     width: 100%;
   }
+  article .facility-flex {
+    display: block !important;
+    padding: 0px;
+  }
   article .article-bg {
     border-radius: 51px 51px 51px 120px !important;
+    height: 100% !important;
+  }
+  article .article-info {
+    width: 320px !important;
+  }
+  article .article-info-im2 {
+    padding: 0px !important;
   }
   article .article-title1 {
     left: 20% !important;
