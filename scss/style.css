@@ -324,14 +324,12 @@ body {
     left: 370px;
   }
   .section .left-menu .left-menu-text1 {
-    text-align: center !important;
     text-decoration: none;
     position: absolute;
     top: 30px;
-    left: 90px;
+    left: 150px;
     font-size: 14px;
     font-family: inherit;
-    color: white;
     width: 300px;
   }
   .section .left-menu .left-menu-text2 {
@@ -341,8 +339,6 @@ body {
     top: 15px;
     left: 110px;
     font-size: 14px;
-    font-family: inherit;
-    color: white;
     width: 100px;
   }
   .section .container {
@@ -464,22 +460,19 @@ body {
     max-height: 60px !important;
   }
   .section .left-menu .left-menu-text1 {
-    text-align: center !important;
     text-decoration: none;
     position: absolute;
     top: 50px;
-    left: -80px;
+    left: 0px;
     font-size: 14px;
     width: 300px;
   }
   .section .left-menu .left-menu-text2 {
-    text-align: center !important;
     text-decoration: none;
     position: absolute;
     top: 50px;
     left: 30px;
     font-size: 14px;
-    font-family: inherit;
     width: 100px;
   }
   .section .container {
@@ -509,7 +502,7 @@ body {
     font-size: 9px !important;
     border: 1px #ccc;
     padding: 0 0;
-    width: 350px;
+    width: 300px;
   }
   .section .container .form-control {
     font-size: 10px;
@@ -578,33 +571,25 @@ main h1 > a {
 }
 
 .section .left-menu .left-menu-text1 {
-  text-align: center !important;
   text-decoration: none;
-  position: absolute;
-  top: 130px;
-  left: -50px;
   font-size: 14px;
-  width: 300px;
+  font-family: inherit;
   color: white;
 }
 
 .section .left-menu .left-menu-text2 {
-  text-align: center !important;
   text-decoration: none;
-  position: absolute;
-  top: 260px;
-  left: -50px;
   font-size: 14px;
-  width: 300px;
+  font-family: inherit;
   color: white;
 }
 
-.section .left-menu .left-menu-img1 {
-  padding: 0px 20px 0px 8px;
+.section .left-menu .left-menu01-img1 {
+  padding: 0px 20px 0px 0px;
 }
 
 .section .left-menu .left-menu-img2 {
-  padding: 50px 0px 3px 18px;
+  padding: 20px 0px 3px 10px;
 }
 
 .container {
@@ -687,5 +672,23 @@ main h1 > a {
 
 .container .form-control {
   font-size: 14px;
+}
+
+article .article-bg {
+  padding: 0px 31px 0px 0px;
+}
+
+article .article-text {
+  width: 100%;
+  height: 611px;
+  background-color: white;
+  border-radius: 88px 88px 88px 185px;
+}
+
+article .article-title {
+  color: #495057;
+  text-align: center;
+  padding: 26px 0px 0px 0px;
+  background-image: url(images/leftmenuim.png);
 }
 /*# sourceMappingURL=style.css.map */

@@ -120,32 +120,24 @@ main {
     background-position: center center;
     background-image: url(images/leftmenuim.png);
     .left-menu-text1 {
-      text-align: center !important;
-          text-decoration: none;
-          position: absolute;
-          top:130px;
-          left:-50px;
-          font-size: 14px;
-          
-          width: 300px;
+     
+      text-decoration: none;
+      font-size: 14px;
+      font-family: inherit;
       color: white;
     }
     .left-menu-text2 {
-      text-align: center !important;
-          text-decoration: none;
-          position: absolute;
-          top:260px;
-          left:-50px;
-          font-size: 14px;
-          
-          width: 300px;
+     
+      text-decoration: none;
+      font-size: 14px;
+      font-family: inherit;
       color: white;
     }
-    .left-menu-img1 {
-      padding: 0px 20px 0px 8px;
+    .left-menu01-img1 {
+      padding: 0px 20px 0px 0px;
     }
     .left-menu-img2 {
-      padding: 50px 0px 3px 18px;
+      padding: 20px 0px 3px 10px;
     }
   }
 }
@@ -180,5 +172,24 @@ main {
   }
   .form-control{
     font-size: 14px;
+  }
+}
+
+article {
+  .article-bg{
+    padding: 0px 31px 0px 0px; 
+  }
+  .article-text {
+    width: 100%;
+    height: 611px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 88px 88px 88px 185px;
+  }
+  .article-title{
+    color: #495057;
+    text-align: center;
+    padding: 26px 0px 0px 0px;
+    background-image: url(images/leftmenuim.png);
+
   }
 }
