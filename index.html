@@ -10,6 +10,10 @@
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="scss/style.css" />
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,7 +68,6 @@
       </ul>
     </div>
     <div class="container">
-      <div>
         <ul class="bar font12">
           <li class="left-imput"><input id="searchInput" class="form-control fs-12" name="free_word" type="text"
               placeholder="住所や施設名を入力し「検索」してください
@@ -73,7 +76,6 @@
             <form><button class="input-botton input-color">検索</button></form>
           </li>
         </ul>
-      </div>
     </div>
 
   </div>
@@ -83,11 +85,13 @@
     <div class="article">
       <ul class="article-bg">
         <li class="article-title1">みんなの広場</li>
-        <div class="notice-container">
+        <li class="notice-container">
  
           <ul class="tabs">
-            <li class="tab-link current" data-tab="tab-1">新着</li>
-            <li class="tab-link" data-tab="tab-2">特集</li>
+            <li class="tab-link current" data-tab="tab-1">
+              <div class="tabbox-out"><div class="tabbox">新着</div></div></li>
+            <li class="tab-link" data-tab="tab-2">
+              <div class="tabbox-out"><div  class="tabbox">特集</div></div class="tabbox-out"></li>
            
           </ul>
          
@@ -99,56 +103,14 @@
           </div>
           <div id="tab-2" class="tab-content">
             <img src="scss/images/testim1.png" alt="">
-            <img src="scss/images/testim2.png" alt="">
-            <img src="scss/images/testim3.png" alt="">
-            <img src="scss/images/testim4.png" alt="">
           </div>
-          <li class="articlemore-bg"><a href="" class="articlemore-text articlemore-text2">もっと見る</a></li>
-         
-        </div>
-          
-         
-  </article>
-  <article>
-    <li class="article">
-      <ul class="article-bg">
-        <li class="article-title1">施設あんない</li>
-        <div>
-          <ul class="facility-flex">
-            <li class="facility-butten1 facility-text1 hide-mobile-facility-butten"></li>
-            <li class="article-info">
-              <div>
-                <ul class="article-info-padding">
-                  <li class="article-info-im1"><img class="article-info-im1" src="scss/images/sisetu1.jpg" alt=""></li>
-                  <li class="article-text1">苦楽園第１・第２育成センター</li>
-                  <li class="article-text2">西宮市苦楽園ニ番町18-12（苦楽園小学校）</li>
-                  <li class="article-text2">0798-70-0440</li>
-                </ul>
-              </div>
-            </li>
-            <li class="article-info">
-              <div>
-                <ul class="article-info-padding">
-                  <li><img class="article-info-im2" src="scss/images/sisetu1.jpg" alt=""></li>
-                  <li class="article-text1">深津育成センター</li>
-                  <li class="article-text2">西宮市深津町5-22（深津小学校）</li>
-                  <li class="article-text2">0798-67-2893</li>
-                </ul>
-              </div>
-            </li>
-            <li class="facility-butten2 facility-text2 hide-mobile-facility-butten"></li>
-            <li class="smartphone-facility-butten hide-pc-facility-butten">
-              <ul class="facility-padding">
-                <li class="facility-butten1 facility-text1"></li>
-                <li class="facility-butten2 facility-text2"></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        </li>  
         <li class="articlemore-bg"><a href="" class="articlemore-text articlemore-text2">もっと見る</a></li>
-      </ul>
-      </div>
+         
+      </ul> 
+    </div>  
   </article>
+
   <aside>
     
   </aside>
