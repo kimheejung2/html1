@@ -1,4 +1,8 @@
 @charset "UTF-8";
+aside .aside-notice {
+  font-size: 12px !important;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -968,5 +972,9 @@ article .article-bg .article-info-im2 {
 article .article-bg .article-info-padding {
   padding: 20px;
   margin: 0px;
+}
+
+aside .aside-notice {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
