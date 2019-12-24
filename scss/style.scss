@@ -360,10 +360,63 @@ article {
 aside{
   .aside-notice {
     .aside-title{
-      font-size: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: inherit;
+      color: white;
+      position: absolute;
+      top: 270px;
+      left: 70px;
     }
   }
 }
 
-
-
+.notice-container {
+  width: 100%;
+  background-color: white;
+  padding: 10px 50px 30px 50px;
+  ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  ul.tabs li{
+    background: #ffffff;
+    color: #222;
+    width: 151px;
+    height: 46px;
+    border-top: solid 1px #C2C9D2;
+    border-left: solid 1px #C2C9D2;
+    border-right: solid 1px #C2C9D2;
+    display: inline-block;
+    font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+   
+  ul.tabs li.current{
+    background: #ffffff;
+    color: #222;
+    width: 151px;
+    height: 46px;
+    border-top: solid 1px #C2C9D2;
+    border-left: solid 1px #C2C9D2;
+    border-right: solid 1px #C2C9D2;
+    font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
+    font-size: 14px;
+    text-align: center;
+  }
+   
+  .tab-content{
+    display: none;
+    background: #ffffff;
+    padding: 15px;
+    border-top: solid 1px #C2C9D2;
+  }
+   
+  .tab-content.current{
+    display: inherit;
+  }
+  
+}

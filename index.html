@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Full-Screen Menu Overlay</title>
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -83,11 +83,25 @@
     <div class="article">
       <ul class="article-bg">
         <li class="article-title1">みんなの広場</li>
-        <li class="article-title2"><img src="scss/images/noticeim.png" alt=""></li>
-        <li class="article-album"><img src="scss/images/noticeim2.png" alt=""></li>
-        <li class="articlemore-bg"><a href="" class="articlemore-text articlemore-text2">もっと見る</a></li>
-      </ul>
-    </div>
+        <div class="notice-container">
+ 
+          <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">新着</li>
+            <li class="tab-link" data-tab="tab-2">特集</li>
+           
+          </ul>
+         
+          <div id="tab-1" class="tab-content current">
+        ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ----
+          </div>
+          <div id="tab-2" class="tab-content">
+        ---- ---- ★------ ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ★-- ---- ---- ------★ ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- ★------ ---- ---- ---- ----
+          </div>
+        
+         
+        </div>
+          
+         
   </article>
   <article>
     <li class="article">
@@ -130,16 +144,13 @@
       </div>
   </article>
   <aside>
-    <div class="aside-notice"><ul>
-      <li class="aside-title">お知らせ<li>
-        <li></li>
-      </li></li>
-    </ul></div>
+    
   </aside>
    
   
 
 </body>
 <script src="js/index.js"></script>
+<script src="js/notice.js"></script>
 
 </html>
