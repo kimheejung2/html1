@@ -5,7 +5,6 @@
         right: 25px;
         top: 25px;
         cursor: pointer;
-        background-color: $menu-color;
         width: 115px;
         border-radius: 36px 36px 36px 71px;
         height: 100px;
@@ -14,10 +13,10 @@
         @include easeOut;
       
         &__patty {
-          width: 28px;
-          height: 2px;
-          margin: 0 0 4px 0;
-          background: white;
+          width: 37px;
+          height: 5px;
+          margin: 5px;
+          background: rgb(0, 0, 0);
           @include easeOut; 
       
           &:last-child {
@@ -31,13 +30,15 @@
       
           .burger__patty {
             &:nth-child(1) {
-              transform: rotate(45deg) translate(4px, 4px);
+              transform: rotate(45deg) translate(8px, 8px);
+              background-color: white;
             }
             &:nth-child(2) {
               opacity: 0;
             }
             &:nth-child(3) {
-              transform: rotate(-45deg) translate(5px, -4px);
+              transform: rotate(-45deg) translate(5px, -5px);
+              background-color: white;
             }
           }
         }

@@ -220,17 +220,17 @@ article {
     .article-title2 {
       padding: 0px;
       margin: 12px 70px 0px 70px;
-      overflow: hidden;
+      
     }
     .article-album {
       padding: 0px;
       margin: 12px 70px 0px 70px;
-      overflow: hidden;
+      
     }
     .articlemore-bg {
       display: block;
       position: relative;
-      overflow: hidden;
+      
       color: #ffffff;
       width: 240px;
       height: 42px;
@@ -360,17 +360,28 @@ article {
 }
 
 
-aside{
-  .aside-notice {
-    .aside-title{
+#notice{
+  .notice-bg {
+    position: relative;
+    .notice-title{
       text-decoration: none;
-      font-size: 14px;
+      font-size: 24px;
       font-family: inherit;
-      color: white;
+      color: rgb(0, 0, 0);
       position: absolute;
-      top: 270px;
+      font-weight: bold;
+      top: 0px;
       left: 70px;
+    }
+    .notice-text {
+      text-decoration: none;
+      position: absolute;
+     
+      top: 50px;
+      left: 70px;
+      width: 900px;
+      overflow: hidden;
+      font-family: SourceHanSansJP-Bold, Source Han Sans JP;
     }
   }
 }
-

@@ -1,14 +1,4 @@
 @charset "UTF-8";
-aside .aside-notice .aside-title {
-  text-decoration: none;
-  font-size: 14px;
-  font-family: inherit;
-  color: white;
-  position: absolute;
-  top: 600px !important;
-  left: 70px !important;
-}
-
 .header {
   position: fixed;
   z-index: 5;
@@ -40,7 +30,6 @@ body {
   right: 25px;
   top: 25px;
   cursor: pointer;
-  background-color: #6aaed5;
   width: 115px;
   border-radius: 36px 36px 36px 71px;
   height: 100px;
@@ -52,10 +41,10 @@ body {
 }
 
 .burger__patty {
-  width: 28px;
-  height: 2px;
-  margin: 0 0 4px 0;
-  background: white;
+  width: 37px;
+  height: 5px;
+  margin: 5px;
+  background: black;
   -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -70,8 +59,9 @@ body {
 }
 
 .burger--close .burger__patty:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(4px, 4px);
-          transform: rotate(45deg) translate(4px, 4px);
+  -webkit-transform: rotate(45deg) translate(8px, 8px);
+          transform: rotate(45deg) translate(8px, 8px);
+  background-color: white;
 }
 
 .burger--close .burger__patty:nth-child(2) {
@@ -79,8 +69,9 @@ body {
 }
 
 .burger--close .burger__patty:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(5px, -4px);
-          transform: rotate(-45deg) translate(5px, -4px);
+  -webkit-transform: rotate(-45deg) translate(5px, -5px);
+          transform: rotate(-45deg) translate(5px, -5px);
+  background-color: white;
 }
 
 .menu {
@@ -250,6 +241,83 @@ body {
 .menu .menu__item:nth-child(6) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
+}
+
+.notice-container {
+  width: 100%;
+  padding: 10px 50px 30px 50px;
+}
+
+.notice-container ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  height: 46px;
+}
+
+.notice-container ul.tabs li {
+  display: inline-block;
+}
+
+.notice-container ul.tabs li .tabbox-out div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 150px;
+}
+
+.notice-container ul.tabs li .tabbox-out {
+  background: #ffffff;
+  color: #222;
+  width: 150px;
+  height: 46px;
+  border-top: solid 1px #C2C9D2;
+  border-left: solid 1px #C2C9D2;
+  border-right: solid 1px #C2C9D2;
+  font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  position: relative !important;
+}
+
+.notice-container ul.tabs li.current .tabbox-out {
+  border: 0 !important;
+}
+
+.notice-container ul.tabs li.current .tabbox-out div {
+  top: 15px !important;
+  border-top: solid 1px #C2C9D2 !important;
+  border-left: solid 1px #C2C9D2 !important;
+  border-right: solid 1px #C2C9D2 !important;
+  padding: 5px !important;
+  width: 150px;
+}
+
+.notice-container ul.tabs li.current {
+  color: #222;
+  width: 150px;
+  height: 46px;
+  font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
+  font-size: 14px;
+  text-align: center;
+}
+
+.notice-container .tab-content {
+  display: none;
+  background: #ffffff;
+  padding: 15px;
+  border-top: solid 1px #C2C9D2;
+}
+
+.notice-container .test-im {
+  width: 190px;
+  padding: 5px;
+}
+
+.notice-container .tab-content.current {
+  display: inherit;
 }
 
 /* tablet画面 */
@@ -438,7 +506,7 @@ body {
     margin: 20px 0px 0px 0px !important;
     padding: 0px 11px 0px 11px !important;
     position: absolute;
-    top: 640px;
+    top: 460px;
     left: 0px;
     width: 100%;
   }
@@ -606,6 +674,32 @@ body {
   }
   .section .container .form-control {
     font-size: 10px;
+  }
+  #notice .notice-bg .notice-title {
+    font-size: 20px !important;
+    top: 680px !important;
+    left: 10px !important;
+  }
+  #notice .notice-bg .notice-text {
+    top: 730px !important;
+    left: 10px !important;
+    width: 500px !important;
+  }
+  .test-im {
+    width: 140px !important;
+  }
+  .notice-container {
+    padding: 0px !important;
+  }
+  .notice-container ul.tabs {
+    margin: 15px 0px 0px 0px;
+  }
+  .notice-container .tab-content.current {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
 }
 
@@ -825,19 +919,16 @@ article .article-bg .article-title1 {
 article .article-bg .article-title2 {
   padding: 0px;
   margin: 12px 70px 0px 70px;
-  overflow: hidden;
 }
 
 article .article-bg .article-album {
   padding: 0px;
   margin: 12px 70px 0px 70px;
-  overflow: hidden;
 }
 
 article .article-bg .articlemore-bg {
   display: block;
   position: relative;
-  overflow: hidden;
   color: #ffffff;
   width: 240px;
   height: 42px;
@@ -980,63 +1071,28 @@ article .article-bg .article-text2 {
   text-decoration: none;
 }
 
-aside .aside-notice .aside-title {
+#notice .notice-bg {
+  position: relative;
+}
+
+#notice .notice-bg .notice-title {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 24px;
   font-family: inherit;
-  color: white;
+  color: black;
   position: absolute;
-  top: 270px;
+  font-weight: bold;
+  top: 0px;
   left: 70px;
 }
 
-.notice-container {
-  width: 100%;
-  padding: 10px 50px 30px 50px;
-}
-
-.notice-container ul.tabs {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-.notice-container ul.tabs li {
-  background: #ffffff;
-  color: #222;
-  width: 151px;
-  height: 46px;
-  border-top: solid 1px #C2C9D2;
-  border-left: solid 1px #C2C9D2;
-  border-right: solid 1px #C2C9D2;
-  display: inline-block;
-  font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
-}
-
-.notice-container ul.tabs li.current {
-  background: #ffffff;
-  color: #222;
-  width: 151px;
-  height: 46px;
-  border-top: solid 1px #C2C9D2;
-  border-left: solid 1px #C2C9D2;
-  border-right: solid 1px #C2C9D2;
-  font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
-  font-size: 14px;
-  text-align: center;
-}
-
-.notice-container .tab-content {
-  display: none;
-  background: #ffffff;
-  padding: 15px;
-  border-top: solid 1px #C2C9D2;
-}
-
-.notice-container .tab-content.current {
-  display: inherit;
+#notice .notice-bg .notice-text {
+  text-decoration: none;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 900px;
+  overflow: hidden;
+  font-family: SourceHanSansJP-Bold, Source Han Sans JP;
 }
 /*# sourceMappingURL=style.css.map */

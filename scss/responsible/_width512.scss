@@ -1,5 +1,7 @@
 @mixin whenWidth512() {
   
+ 
+
   .header {
     background-color: rgba(213, 231, 245, 0.77);
     .top-logo {
@@ -30,7 +32,7 @@
       margin: 20px 0px 0px 0px !important;
       padding: 0px 11px 0px 11px !important;
       position: absolute;
-      top: 640px;
+      top: 460px;
       left: 0px;
       width: 100%;
     }
@@ -204,18 +206,43 @@
       }
     }
   }
-}
 
-aside{
-  .aside-notice {
-    .aside-title{
-      text-decoration: none;
-      font-size: 14px;
-      font-family: inherit;
-      color: white;
-      position: absolute;
-      top: 600px !important;
-      left: 70px !important;
+  #notice{
+    .notice-bg {
+      
+      .notice-title{
+        
+        font-size: 20px !important;
+
+        top: 680px !important;
+        left: 10px !important;
+      }
+      .notice-text {
+       
+        top: 730px !important;
+        left: 10px !important;
+        width: 500px !important;
+      
+        
+      }
     }
   }
+  .test-im{
+    width: 140px !important;
+    
+  }
+  .notice-container {
+    padding: 0px !important;
+  }
+  .notice-container ul.tabs{
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .notice-container .tab-content.current {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  
+   
 }
+
