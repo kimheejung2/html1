@@ -1,5 +1,11 @@
 @mixin whenWidth768() {
   
+  .menu {
+    &__list {
+      justify-content: unset !important;
+    }
+  }
+
   .header {
     background-color: rgba(213, 231, 245, 0.77);
     .top-logo {
@@ -76,9 +82,11 @@
      
     }
     .container {
-      margin: 0px 30px -190px 70px;
+      //margin: 0px 30px -190px 70px;
       width: 600px;
       font-size: 14px;
+      position: absolute;
+      top: 100px;
       .label1 {
         font-size: 13px;
         margin: 0px;

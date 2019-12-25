@@ -257,13 +257,13 @@ body {
 
 .notice-container ul.tabs li {
   display: inline-block;
+  overflow: hidden;
 }
 
 .notice-container ul.tabs li .tabbox-out div {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
-  padding: 10px;
   width: 150px;
 }
 
@@ -280,17 +280,16 @@ body {
   text-align: center;
   overflow: hidden;
   position: relative !important;
+  top: 15px;
 }
 
 .notice-container ul.tabs li.current .tabbox-out {
-  border: 0 !important;
+  top: 0px  !important;
+  background: #e7d9d3;
 }
 
 .notice-container ul.tabs li.current .tabbox-out div {
-  top: 15px !important;
-  border-top: solid 1px #C2C9D2 !important;
-  border-left: solid 1px #C2C9D2 !important;
-  border-right: solid 1px #C2C9D2 !important;
+  top: 5px  !important;
   padding: 5px !important;
   width: 150px;
 }
@@ -302,6 +301,7 @@ body {
   font-family: NotoSansCJKjp-Medium, Noto Sans CJK JP;
   font-size: 14px;
   text-align: center;
+  top: 0 !important;
 }
 
 .notice-container .tab-content {
@@ -346,6 +346,11 @@ body {
     height: 25vh;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
+  }
+  .menu__list {
+    -webkit-box-pack: unset !important;
+        -ms-flex-pack: unset !important;
+            justify-content: unset !important;
   }
   .header {
     background-color: rgba(213, 231, 245, 0.77);
@@ -423,9 +428,10 @@ body {
     width: 100px;
   }
   .section .container {
-    margin: 0px 30px -190px 70px;
     width: 600px;
     font-size: 14px;
+    position: absolute;
+    top: 100px;
   }
   .section .container .label1 {
     font-size: 13px;
@@ -477,6 +483,11 @@ body {
     height: 25vh;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
+  }
+  .menu__list {
+    -webkit-box-pack: unset !important;
+        -ms-flex-pack: unset !important;
+            justify-content: unset !important;
   }
   .header {
     background-color: rgba(213, 231, 245, 0.77);
@@ -647,6 +658,7 @@ body {
     position: absolute;
     top: 380px;
     left: 0px;
+    margin: 0 !important;
   }
   .section .container .label1 {
     font-size: 12px;
@@ -742,7 +754,7 @@ main h1 > a {
   font-weight: 300;
 }
 
-.section {
+.main_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,7 +769,7 @@ main h1 > a {
   background-position: center;
 }
 
-.section .left-menu {
+.main_content .left-menu {
   width: 201px;
   height: 431px;
   position: relative;
@@ -767,7 +779,7 @@ main h1 > a {
   background-image: url(images/leftmenuim.png);
 }
 
-.section .left-menu .left-menu-text1 {
+.main_content .left-menu .left-menu-text1 {
   text-decoration: none;
   font-size: 14px;
   font-family: inherit;
@@ -777,7 +789,7 @@ main h1 > a {
   left: 50px;
 }
 
-.section .left-menu .left-menu-text2 {
+.main_content .left-menu .left-menu-text2 {
   text-decoration: none;
   font-size: 14px;
   font-family: inherit;
@@ -787,11 +799,11 @@ main h1 > a {
   left: 70px;
 }
 
-.section .left-menu .left-menu01-img1 {
+.main_content .left-menu .left-menu01-img1 {
   padding: 0px 20px 0px 0px;
 }
 
-.section .left-menu .left-menu-img2 {
+.main_content .left-menu .left-menu-img2 {
   padding: 70px 0px 3px 20px;
 }
 
