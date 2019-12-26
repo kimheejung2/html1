@@ -28,7 +28,7 @@
     padding: 150px 100px 0px 0px !important;
     margin: 230px auto 0px auto !important;
   }
-  .section {
+  .main_content {
     flex-direction: column-reverse;
     position: relative;
     height: 700px !important;
@@ -81,12 +81,20 @@
       }
      
     }
+    .news-sec-list-ttl {
+      display: inline-block;
+      width: calc(100% - 15.5em);
+      padding-top: 3px;
+      font-size: 1.4rem;
+      line-height: 1.6;
+      transition: all .2s;
+    }
     .container {
-      //margin: 0px 30px -190px 70px;
-      width: 600px;
+      top:70%; left:20%; bottom:0; right:20%;
+      width: 600px !important;
       font-size: 14px;
       position: absolute;
-      top: 100px;
+      
       .label1 {
         font-size: 13px;
         margin: 0px;

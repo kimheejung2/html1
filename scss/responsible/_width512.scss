@@ -1,6 +1,8 @@
 @mixin whenWidth512() {
   
- 
+  .main_content {
+    height: 500px !important;
+  }
   .menu {
     &__list {
       justify-content: unset !important;
@@ -117,7 +119,21 @@
     }
   }
 
-  .section {
+#news{
+  position: relative;
+    top: 690px;
+    left: -40px;
+    .news-title {
+      padding: 10px;
+    }
+    .news-text {
+      padding: 10px;
+    }
+    .articlemore-bg {
+      margin: 0px 0px 0px 60px !important;
+    }
+}
+  .main_content {
     flex-direction: column-reverse;
     position: relative;
     width: 100%;
@@ -180,6 +196,8 @@
       top: 380px;
       left: 0px;
       margin: 0 !important;
+      
+      
 
       .label1 {
         font-size: 12px;
