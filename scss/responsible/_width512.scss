@@ -267,6 +267,35 @@
     flex-wrap: wrap !important;
   }
   
+  footer{
+    position: absolute;
+    top: 1650px !important;
+    .footer-list{
+      .footer-logo{
+        display: none;
+      }
+      .footer-text1 {
+       
+        top: 10px !important;
+        left: 10px !important;
+        height: 40px;
+        width: 60px !important;
+    }
+    .footer-bar1{
+      left: 130px !important;
+    }
+    .footer-bar2{
+      display: none !important;
+     }
+    .footer-text2 {
+       
+      top: 10px !important;
+      left: 100px !important;
+      height: 40px;
+      width: 100px !important;
+  }
+  }
+}
    
 }
 
