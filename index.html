@@ -16,13 +16,16 @@
 </head>
 
 <body>
+  <!-- ヘッダー -->
   <header class="header">
+    <!-- 学童ロゴ -->
     <div class="top-logo">
       <a href="./">
         <img class="logo-img" src="images/logo.png" alt="学童施設情報データベース">
       </a>
     </div>
 
+    <!-- バーガー メニュー -->
     <div class="burger">
       <div class="burger__patty"></div>
       <div class="burger__patty"></div>
@@ -36,17 +39,14 @@
         </a>
       </div>
       <div>
+        <!-- メニューリスト -->
         <ul class="menu__list">
-
-          <li class="menu__item"><a href="" class="menu__text"><img class="menu__img" src="images/menuim2.png"
-                alt="学童">学童施設案内</a></li>
-          <li class="menu__item"><a href="" class="menu__text2">学童施設検索</a></li>
-          <li class="menu__item"><a href="" class="menu__text2">サイトからのお知らせ</a></li>
-
-          <li class="menu__item"><a href="" class="menu__text"><img class="menu__img" src="images/menuim3.png"
-                alt="学童">このサイトを利用する際に</a></li>
-          <li class="menu__item"><a href="" class="menu__text2">利用規約</a></li>
-          <li class="menu__item"><a href="" class="menu__text2">個人情報保護方針
+          <li class="menu__item"><a href="#" class="menu__text"><img class="menu__img" src="images/menuim2.png"　alt="学童施設案内">学童施設案内</a></li>
+          <li class="menu__item"><a href="#" class="menu__text2">学童施設検索</a></li>
+          <li class="menu__item"><a href="#" class="menu__text2">サイトからのお知らせ</a></li>
+          <li class="menu__item"><a href="#" class="menu__text"><img class="menu__img" src="images/menuim3.png" alt="このサイトを利用する際に">このサイトを利用する際に</a></li>
+          <li class="menu__item"><a href="#" class="menu__text2">利用規約</a></li>
+          <li class="menu__item"><a href="#" class="menu__text2">個人情報保護方針
             </a></li>
         </ul>
       </div>
@@ -54,22 +54,20 @@
   </header>
 
   <section>
-    <div class="main_content">
-
+    <div class="main_content">    
+      <!-- 施設名検索フォーム -->
       <article class="container">
         <ul class="bar font12">
           <li class="left-imput"><input id="searchInput" class="form-control fs-12" name="free_word" type="text"
-              placeholder="住所や施設名を入力し「検索」してください
-                        " maxlength="50"></li>
+              placeholder="住所や施設名を入力し「検索」してください" maxlength="50"></li>
           <li>
             <form><button class="input-botton input-color">検索</button></form>
           </li>
-        </ul>
+        </ul>    
+      </article>
     </div>
 
-    </article>
-
-
+    <!-- みんなの広場 -->
     <article>
       <div class="article">
         <ul class="article-bg">
@@ -87,18 +85,17 @@
                   <div class="tabbox">特集</div>
                 </div class="tabbox-out">
               </li>
-
             </ul>
 
+            <!-- 新着写真 -->
             <div id="tab-1" class="tab-content current ">
               <img class="test-im" src="scss/images/testim2.png" alt="">
               <img class="test-im" src="scss/images/testim2.png" alt="">
               <img class="test-im" src="scss/images/testim3.png" alt="">
               <img class="test-im" src="scss/images/testim4.png" alt="">
-
-
-
             </div>
+            
+            <!-- 特集写真 -->
             <div id="tab-2" class="tab-content">
               <img class="test-im" src="scss/images/testim1.png" alt="">
               <img class="test-im" src="scss/images/testim1.png" alt="">
@@ -107,11 +104,11 @@
             </div>
           </li>
           <li class="articlemore-bg"><a href="" class="articlemore-text articlemore-text2">もっと見る</a></li>
-
         </ul>
       </div>
     </article>
 
+    <!-- お知らせ -->
     <article>
       <div id="news">
         <ul class="news-bg">
@@ -119,11 +116,12 @@
           <li class="news-text">『岡山県FOS少年団連盟リーダー認定資格研修会』</li>
           <li class="articlemore-bg"><a href="" class="articlemore-text articlemore-text2">もっと見る</a></li>
         </ul>
-
       </div>
-
     </article>
   </section>
+
+  
+  <!-- フッター -->
   <footer>
     <div class="footer-line"></div>
     <div class="bgc">
@@ -139,7 +137,10 @@
     <div class="copyright">©SITEX CORPORATION ALL rights Reserved.</div>
   </footer>
 </body>
+
+<!-- バーガー メニュー用のjavascript -->
 <script src="js/index.js"></script>
+<!-- お知らせタブのjavascript -->
 <script src="js/notice.js"></script>
 
 </html>

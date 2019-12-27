@@ -9,32 +9,41 @@
         margin: 0 10px 0px 0px;
         padding: 0px 0px 0px 40px;
         outline-width: 0;
+        font-size: 14px;
     }
   
     .form-control:focus{
-    border: 1px solid #0f9df0 !important;
+        border: 1px solid #0f9df0 !important;
     }
+
     .font12 {
-    height: 30px;
-    margin: 10px;
-    width: 80%;
-    resize: none;
-    padding: 8px 16px;
+        height: 30px;
+        margin: 10px;
+        width: 80%;
+        resize: none;
+        padding: 8px 16px;
+        color: #999;
+        font-size: 12px;
+        border: 1px #ccc;
+        padding: 0 0;
+        width: 100%;
     }
+
     .left-imput {
-    float: left;
-    height: 30px;
-    width: 70%;
-    display: flex;
+        float: left;
+        height: 50px;
+        width: 70%;
+        display: flex;
     }
+    
     .input-botton {
-    display: flex;
-    width: 137px;
-    height: 49px;
-    background-color: #6aaed5;
-    border-radius: 15px 15px 15px 30px;
-    color: #fff;
-    justify-content: center;
-    border: 0px;
+        display: flex;
+        width: 137px;
+        height: 49px;
+        background-color: #6aaed5;
+        border-radius: 15px 15px 15px 30px;
+        color: #fff;
+        justify-content: center;
+        border: 0px;
     }
 }
