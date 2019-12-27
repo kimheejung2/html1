@@ -25,11 +25,12 @@ $menu-color: #6aaed5;
 @include footer;
 
 //burger menu CSS
-@include burgerMenu;
+@include burgerMenu; 
 
 //burger menu CSS
 @include popListMenu;
 
+//notice CSS
 @include notice;
 
 @mixin tablet {
